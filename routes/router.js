@@ -55,7 +55,7 @@ router.get('/admin/user-count',middleaware.logMiddleware,adminController.getUser
 router.get('/admin/booking-count',middleaware.logMiddleware,adminController.getBookingCount)
 
 router.post('/user/delete-order',middleaware.logMiddleware,userController.deleteOrder)
-router.post('/chat',chatController.chatWithBot);
+
 router.post('/forgot-password', userController.forgotPassword);
 router.post('/reset-password',userController.resetPassword);
 module.exports= router
